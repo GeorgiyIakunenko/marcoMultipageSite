@@ -456,5 +456,141 @@
 		}
 }
 
+.product {
+    padding: 105px 0 120px;
+    text-align: center;
+		&__items {
+      display: grid;
+      grid-template-columns: repeat(3 , 1fr);
+      grid-gap: 45px 30px;
+
+		}
+
+		&__link {
+      display: inline-block;
+      margin-top: 55px;
+      color: $title;
+      text-transform: uppercase;
+      padding: 17px 18px;
+      border: 1px solid $accent;
+		}
+}
+
+.product-item {
+    
+    
+    max-width: 370px ;
+		&__img-box {
+      position: relative;
+      height: 370px;
+      overflow: hidden;
+      margin-bottom: 25px;
+    
+		}
+
+  	&__images {
+      object-fit: cover;
+		}
+
+		&__link-box {
+      transition: all .3s;
+      left: 0;
+      right: 0;
+      bottom: 50px;
+      background-color: #fff;
+      display: inline-block;
+      margin: 0 auto;
+      width: 220px;
+      height: 50px;   
+      box-shadow: 0px 5px 30px 0px rgba(152, 152, 152, 0.2);
+      border-radius: 23px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      position: absolute;
+      transform: translateY(300%);
+
+		}
+
+    &__link--line::before,
+    &__link--line::after {
+      content: '';
+      position: absolute;
+      height: 30px;
+      width: 1px;
+      background-color: #ececec;
+      top: 9px;
+      cursor: default;
+    }
+
+
+    &__link--line::before {
+      
+      left: 72px;
+    }
+
+    &__link--line::after {
+       right: 72px; 
+    }
+ 
+		&__link:hover {
+      path {
+        fill: $accent;
+      }
+		}
+
+    &__link {
+      display: inherit;
+      path {
+        transition: all .2s;
+      }
+
+    }
+
+    &:hover {
+      .product-item__link-box {
+
+        transform: translateY(0)
+      }
+    }
+
+		&__title {
+      color: $title;
+      font-size: 22px;
+      margin: 15px 0 20px;
+		}
+
+		&__price {
+      display: flex;
+      justify-content: center;
+      @extend %roboto-400;
+		}
+
+		&__price-new {
+      padding: 0 12px;  
+      color: $title;
+		}
+
+		&__price-old {
+      padding: 0 12px;
+      color: $default;
+      text-decoration: line-through;
+		}
+
+    &--sale {
+      .product-item__img-box::before {
+        content: 'SALE';
+        @extend %btn;
+        position: absolute;
+        top: 25px ;
+        left: 25px;
+        padding:  4px 11px;
+      }
+    }
+}
+.star {
+  margin: 0 auto;
+}
+
 
 @import "media";
