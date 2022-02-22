@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header header--404-page">
       <div class="container">
         <div class="header__inner">
           <a class="logo" href="#">
@@ -72,52 +72,20 @@
     </header>
 
     <main class="main">
-      <section class="top">
-        <div class="top__container" style="background-image: url('../images/top-bg.jpg');">
-          <div class="container">
-            <h2 class="top__title title">
-              REGISTER
-            </h2>
-            <div class="breadcrumbs">
-              <ul class="breadcrumbs__list">
-                <li class="breadcrumbs__item">
-                  <a class="breadcrumbs__link" href="#">
-                    Home
-                  </a>
-                </li>
-                <li class="breadcrumbs__item">
-                  <a class="breadcrumbs__link" href="#">
-                    Register
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="modal">
+      <section class="page-404">
         <div class="container">
-          <div class="modal__links">
-            <a class="modal__link modal__link--active" href="#">REGISTER</a>
-            <a class="modal__link " href="#">LOGIN</a>
+          <div class="page-404__inner">
+            <div class="page-404__content">
+              <h2 class=" page-404__title">
+                OPPS! Page Not Found!!
+              </h2>
+              <p class=" page-404__text">
+                We,re sorry but we can’t seem to find the pages you request. This might be because you have typed the web address not find incorrectly.
+              </p>
+              <a class="page-404__link" href="#">BACK TO HOME</a>
+            </div>
+            <img  class="page-404__images" src="images/error-404.png" alt="error"></img>
           </div>
-          <form class="modal__form" action="#">
-            <label class="modal__lable">
-              Username or email address*
-              <input class="modal__input" type="text" required>
-            </label>
-            <label class="modal__lable">
-              Password*
-              <input class="modal__input" type="password" required>
-            </label>
-            <p class="modal__text">A password will be sent to your email address.</p>
-            <p class="modal__text">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy.</p>
-            <label class="modal__lable">
-              <input type="checkbox">
-              Agree with Terms & Conditions
-            </label>
-            <button class="modal__btn" type="submit">Register</button>
-          </form>
         </div>
       </section>
     </main>
