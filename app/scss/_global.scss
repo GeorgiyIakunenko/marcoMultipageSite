@@ -100,3 +100,48 @@ a {
 .header--404-page {
   background-color: $bg;
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+
+  .pagination__list {
+    display: flex;
+    padding: 0 35px;
+  }
+
+  &__item {
+    padding: 0 15px;
+  }
+
+  &__link--active {
+    color: $accent;
+  }
+
+  &__arrows {
+    text-transform: uppercase;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 5px;
+      height: 10px;
+      top: 8px;
+    }
+  }
+  &__prev {
+    padding-left: 15px;
+    &::before {
+    background-image: url('../images/icons/angle-left.svg');
+    left: 0;
+    }
+  }
+  
+  &__next {
+    padding-right: 15px;
+    &::before {
+      background-image: url('../images/icons/angle-right.svg');
+      right: 0;
+    }
+  }
+}
