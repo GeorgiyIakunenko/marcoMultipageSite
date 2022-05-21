@@ -1,5 +1,5 @@
 .video-fashion {
-  background-color: $bg ;
+  background-color: $bg;
   background-image: url('../images/decor/pattern.svg');
   background-size: cover;
   background-position: top center;
@@ -47,5 +47,47 @@
 
   &__link {
     @extend %btn;
+  }
+}
+
+@media (max-width: 1050px) {
+  .video-fashion {
+
+    &__inner {
+      display: block;
+    }
+
+    &__popup {
+      max-width: 100%;
+      background-position: center top;
+    }
+
+    &__content {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .video-fashion {
+    padding: 60px 0;
+    &__inner {
+      display: block;
+    }
+
+    &__popup {
+      max-width: 100%;
+      height: 270px;
+      background-position: center top;
+    }
+
+    &__subtitle {
+      padding-top: 40px;
+      font-size: 18px;
+    }
+
+    &__content {
+      max-width: 100%;
+    }
   }
 }

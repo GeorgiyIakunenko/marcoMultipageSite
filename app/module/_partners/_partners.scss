@@ -8,3 +8,28 @@
     align-items: center
   }
 }
+
+@media (max-width: 620px) {
+  .partners {
+    padding: 60px 0;
+
+    &__list {
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      margin: 10px 35px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .partners {
+    &__item {
+      margin: 10px 20px;
+    }
+  }
+}

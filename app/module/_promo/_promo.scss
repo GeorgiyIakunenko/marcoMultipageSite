@@ -54,3 +54,31 @@
     border: 1px solid $accent;
   }
 }
+
+@media (max-width:620px) {
+  .promo {
+    padding: 60px 0;
+
+    &__clock {
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    &__link {
+      margin-top: 30px;
+    }
+
+    &__clock-item {
+      margin: 20px 36px;
+    }
+  }
+}
+
+@media (max-width:450px) {
+  .promo {
+    &__clock-item {
+      margin: 7px;
+    }
+  }
+}

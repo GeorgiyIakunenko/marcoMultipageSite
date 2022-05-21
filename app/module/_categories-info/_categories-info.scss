@@ -55,6 +55,7 @@
     @extend %roboto-400;
   }
 }
+
 .categories {
   &__items {
     display: grid;
@@ -69,8 +70,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
     &:nth-child(1) {
       grid-row: span 2;
+
       .categories__item-subtitle,
       .categories__item-link:hover {
         color: #5800e4;
@@ -92,6 +95,7 @@
 
     &:nth-child(3) {
       padding: 40px 0 0 40px;
+
       .categories__item-subtitle,
       .categories__item-link:hover {
         color: #ffbe49;
@@ -125,4 +129,118 @@
     @extend %roboto-400;
     transition: all .3s;
   }
+}
+
+@media (max-width: 1240px) {
+  .info {
+    &::after {
+      right: 0;
+    }
+
+    &__item {
+      width: 340px;
+      padding: 20px;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .info {
+    display: block;
+
+    &__item {
+      width: 100%;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    &__item-title {
+      margin: 20px 0 10px;
+    }
+  }
+
+  .categories {
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+    }
+
+    &__item {
+      background-position: center top;
+
+      &:nth-child(1) {
+        grid-row: auto;
+      }
+
+      &:nth-child(2) {
+        grid-column: auto;
+        background-position: center right;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .categories {
+    &__items {
+      min-height: 400px;
+    }
+
+    &__item {
+      background-image: none !important;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 15px;
+      &:nth-child(1) {
+        background-color: #f4dff0;
+      }
+
+      &:nth-child(2) {
+        background-color: #d7efef;
+        padding: 15px;
+      }
+
+      &:nth-child(3) {
+        background-color: #fff6a7;
+        padding: 15px;
+      }
+
+      &:nth-child(4) {
+        background-color: #ededed;
+        padding: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .categories {
+    &__items {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 10px;
+    }
+
+    .categories-info {
+      padding: 120px 0 60px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .info {
+    display: block;
+
+    &__item {
+      width: 100%;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    &__item-title {
+      font-size: 20px;
+    }
+  }
+
 }

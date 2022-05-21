@@ -229,3 +229,43 @@
 .star {
   margin: 0 auto;
 }
+
+@media (max-width:1050px) {
+  .product-item {
+    &__img-box {
+      height: 305px;
+    }
+  }
+}
+
+@media (max-width:860px) {
+  .product-item {
+    &__img-box {}
+  }
+
+  .product__items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+}
+
+@media (max-width:620px) {
+  .products {
+    padding: 60px 0;
+  }
+
+  .product-item {
+    max-width: 100%;
+    &__img-box {
+      margin-bottom: 10px;
+    }
+    &__images {
+      width: 100%;
+    }
+  }
+
+  .product__items {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+}
