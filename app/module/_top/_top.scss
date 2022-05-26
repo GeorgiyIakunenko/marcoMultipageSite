@@ -9,3 +9,11 @@
     text-align: center;
   }
 }
+
+@media (max-width: 768px) {
+  .top {
+    &__container {
+      padding: 60px 0;
+    }
+  }
+}
