@@ -19,7 +19,6 @@
 }
 
 .product-item {
-
   text-align: center;
   max-width: 370px;
 
@@ -59,7 +58,6 @@
     .product-item__price {
       order: -1;
       margin-left: -12px;
-
     }
 
     .product-item__text {
@@ -239,10 +237,6 @@
 }
 
 @media (max-width:860px) {
-  .product-item {
-    &__img-box {}
-  }
-
   .product__items {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;

@@ -103,7 +103,6 @@
     }
 
     &:nth-child(4) {
-
       padding: 40px 0 0 40px;
 
       .categories__item-subtitle,
@@ -192,6 +191,7 @@
       justify-content: center;
       flex-direction: column;
       padding: 15px;
+
       &:nth-child(1) {
         background-color: #f4dff0;
       }
@@ -242,5 +242,4 @@
       font-size: 20px;
     }
   }
-
 }
