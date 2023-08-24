@@ -1,4 +1,4 @@
-# [MultipageMarchoWebSite](https://georgiyiakunenko.github.io/marcho-by-Goshan/)
+# [MultipageMarchoWebSite](https://georgiyiakunenko.github.io/marcoMultipageSite/)
 
 Multipage project marcho created by Georgiy Iakunenko
 
