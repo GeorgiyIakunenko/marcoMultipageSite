@@ -1,8 +1,9 @@
-# [Multipage-Site-Marcho](https://georgiyiakunenko.github.io/marcho-by-Goshan/)
+# [MultipageMarchoWebSite](https://georgiyiakunenko.github.io/marcho-by-Goshan/)
 
- multipage project marcho created by George Yakunenko
+Multipage project marcho created by Georgiy Iakunenko
 
-- using BEM naming
-- adaptive for any device
-- using gulp assembly and scss preprocessor
-- Used partial modularity and nunjacks
+- Organized with BEM naming.
+- Works smoothly on all devices.
+- Built using Gulp and SCSS.
+- Spans 10 pages.
+- Implemented pagination, breadcrumbs, and interactive filters.
